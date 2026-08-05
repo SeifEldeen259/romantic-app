@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Cinematic Romance</title>
+    
+    <!-- Premium Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background & Environmental Effects -->
+    <div id="background-container" class="cinematic-bg"></div>
+    <div id="particles-container"></div>
+    <div id="hearts-container"></div>
+
+    <!-- Global Controls -->
+    <button id="music-toggle" class="glass-btn" aria-label="Toggle Music">
+        <span class="music-icon sound-off"></span>
+    </button>
+    <audio id="bg-music" loop preload="auto"></audio>
+
+    <!-- Initial Loading Screen -->
+    <div id="loading-screen" class="glass-panel active">
+        <div class="loader">
+            <div class="loader-heart"></div>
+        </div>
+        <p class="loader-text">Curating memories...</p>
+    </div>
+
+    <!-- Main Application Container -->
+    <main id="app-container" class="hidden">
+        
+        <!-- Welcome Screen (Phase 1) -->
+        <section id="welcome-screen" class="screen active glass-panel">
+            <div class="welcome-content">
+                <h1 class="elegant-title" id="welcome-title"></h1>
+                <p class="elegant-subtitle" id="welcome-subtitle"></p>
+                <button id="start-btn" class="primary-btn">Begin Journey</button>
+            </div>
+        </section>
+
+        <!-- Containers for Future Phases -->
+        <section id="breakup-screen" class="screen hidden"></section>
+        <section id="memory-screen" class="screen hidden"></section>
+        <section id="final-screen" class="screen hidden"></section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
